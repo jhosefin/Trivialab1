@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pregunta 1</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="flex-container">
+  <!-- Imagen de decoracion para nuestra pagina -->
+        <div class="imagen">
+           <img src="src/imagenes/fondo.png"><img>
+         </div>
+      <div>
+          <h1><div id="nombre"></div></h1>
+        <FONT-SIZE class="titulo"></FONT-SIZE>
+        <br />
+        <h4 id="titulo2">2. ¿ La pelota que color tiene ?</h4>
+        <div>
+          <input
+            type="radio"
+            name="color"
+            value="white"
+            id="white"
+          />
+          <label for="white">White</label>
+          <br />
+          <input
+            type="radio"
+            name="color"
+            value="Orange"
+            id="Orange"
+          />
+          <label for="Orange">Orange</label>
+          <br />
+          <input
+            type="radio"
+            name="color"
+            value="Blue"
+            id="Blue"
+          />
+          <label for="Blue">Blue</label>
+        </div>
+        <div id="mensaje"></div>
+        <img src="src/imagenes/pelota.png" id="imagen2" />
+
+        <a href="index4.html" id="next" class="button">Next</a>
+        <a href="index.html" class="button">Home</a>
+
+
+    <script src="src/index.js"></script>
+    <script>
+      function evaluar(valor) {
+        if (valor === "Blue") {
+          document.getElementById("mensaje").innerHTML = "Correcto " + valor;
+
+          window.alert("Lo estas haciendo bien!!");
+        } else {
+          document.getElementById("mensaje").innerHTML = "Incorrecto " + valor;
+        }
+      }
+    </script>
+  </body>
+</html>
